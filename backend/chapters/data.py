@@ -1,0 +1,42 @@
+CHAPTERS = [
+	{
+		"chapter_id": "grade6_fractions",
+		"chapter_name": "Fractions Fundamentals",
+		"chapter_difficulty": 0.45,
+		"expected_completion_time_seconds": 1200,
+		"prerequisites": [],
+		"next_chapter_id": "grade7_fractions_decimals",
+	},
+	{
+		"chapter_id": "grade7_fractions_decimals",
+		"chapter_name": "Fractions and Decimals",
+		"chapter_difficulty": 0.55,
+		"expected_completion_time_seconds": 1500,
+		"prerequisites": ["grade6_fractions"],
+		"next_chapter_id": "grade7_linear_equations",
+	},
+	{
+		"chapter_id": "grade7_linear_equations",
+		"chapter_name": "Linear Equations",
+		"chapter_difficulty": 0.62,
+		"expected_completion_time_seconds": 1700,
+		"prerequisites": ["grade7_fractions_decimals"],
+		"next_chapter_id": "grade8_algebra_basics",
+	},
+	{
+		"chapter_id": "grade8_algebra_basics",
+		"chapter_name": "Algebra Basics",
+		"chapter_difficulty": 0.7,
+		"expected_completion_time_seconds": 1900,
+		"prerequisites": ["grade7_linear_equations"],
+		"next_chapter_id": "grade8_geometry_intro",
+	},
+	{
+		"chapter_id": "grade8_geometry_intro",
+		"chapter_name": "Introduction to Geometry",
+		"chapter_difficulty": 0.66,
+		"expected_completion_time_seconds": 1800,
+		"prerequisites": ["grade7_linear_equations"],
+		"next_chapter_id": None,
+	},
+]
